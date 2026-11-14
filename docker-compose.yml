@@ -1,0 +1,15 @@
+services:
+  client:
+    build: .
+    image: syedshah3994/capstone-client:latest
+    container_name: capstone-client
+    environment:
+      SERVER_HOST: ${SERVER_HOST:?SERVER_HOST ko .env file mein set karein}
+      SERVER_PORT: "${SERVER_PORT:-5000}"
+    volumes:
+      - clientvol:/clientdata
+    restart: "no"
+
+volumes:
+  clientvol:
+    name: clientvol

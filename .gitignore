@@ -1,0 +1,8 @@
+.env
+output.txt
+terraform.tfvars
+*.tfstate
+*.tfstate.*
+.terraform/
+*.pem
+__pycache__/

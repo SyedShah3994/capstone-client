@@ -1,0 +1,9 @@
+.git
+.github
+terraform
+monitoring
+docs
+.env
+output.txt
+README.md
+__pycache__
